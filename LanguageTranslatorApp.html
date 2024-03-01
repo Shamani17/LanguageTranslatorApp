@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language App</title>
+    <link rel="stylesheet" href="LanguageTranslatorApp.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <br>
+    <h1><center>TRANSLATE</center></h1>
+    <br>
+    <div class="container">
+        <div class="wrapper"></div>
+            <div class="text-input">
+                <textarea class="from-text" placeholder="Enter text"></textarea>
+                <textarea class="from-to" placeholder="Translation" readonly disabled></textarea>
+            </div>
+            <br>
+            <div class="controls">
+                <div class="row from">
+                    <div class="icons">
+                        <div class="one"><i id="from" class="fas fa-volume-up"></i></div>
+                        <div class="one"><i id="from" class="fas fa-copy"></i></div>
+                    </div>
+                    <br>
+                    <select class="select">
+                    </select>
+                </div>
+                <div class="exchange">
+                    <div class="one"><i class="fas fa-exchange-alt"></i></div>
+                </div>
+                <div class="row to">
+                    <div class="icons">
+                    <div class="one"><i id="to" class="fas fa-volume-up"></i></div>
+                    <div class="one"><i id="to" class="fas fa-copy"></i></div>   
+                    </div>
+                    <br>
+                    <select class="select"></select>
+                </div>
+            </div>
+            <br>
+           <center><button id="btn">Translate Text</button></center> 
+        </div>
+    </div>
+    <script src="js/countries.js"></script>
+    <script src="js/LanguageTranslatorApp.js"></script>
+</body>
+</html>
